@@ -1,0 +1,8 @@
+{
+  "name": "MM-Achievements-Unlocker",
+  "version": "1.0.0",
+  "description": "A Nodejs Script to unlock all MM's Achievements which player has earned.",
+  "main": "index.js",
+  "author": "Arose-Niazi",
+  "license": "MIT"
+}
