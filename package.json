@@ -1,8 +1,15 @@
 {
-  "name": "MM-Achievements-Unlocker",
-  "version": "1.0.0",
-  "description": "A Nodejs Script to unlock all MM's Achievements which player has earned.",
-  "main": "index.js",
-  "author": "Arose-Niazi",
-  "license": "MIT"
+    "name": "mm-achievements-unlocker",
+    "version": "1.0.0",
+    "description": "A Nodejs Script to unlock all MM's Achievements which player has earned.",
+    "main": "index.js",
+    "author": "Arose-Niazi",
+    "license": "MIT",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "mysql": "^2.18.1"
+    }
 }
