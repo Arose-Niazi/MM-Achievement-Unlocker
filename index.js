@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
 	database: process.env.DB_DATABASE,
 });
 
-let djs = ['Sasuke_Uchiha', 'Commander_Steel'];
+let djs = ['Sasuke_Uchiha', 'Commander_Steel', 'JazzerLovesNutella', 'Meiko', 'Zeeshan47', 'Alex_Shelby', 'sammmY', 'King_Bert'];
 
 let achievements = [];
 const Queries = [
@@ -60,7 +60,6 @@ async function checkUnlocked() {
 
 	connection.query("SELECT p_ID,75 AS Ach_ID FROM user_accounts WHERE p_UserName IN (?)", [djs], async function (error, results) {
 		if (error) throw error;
-		console.log(results);
 		await UnlockAch(results);
 		TotalDone++;
 
